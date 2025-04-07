@@ -8,7 +8,7 @@ const Hero = () => {
   const lottieRef = useRef();
 
   return (
-    <section className="hero flex" id="about">
+    <section className="hero flex" id="home">
       <div className="left-section  ">
         <div className="parent-avatar flex">
           <motion.img
@@ -39,13 +39,22 @@ const Hero = () => {
         </p>
 
         <div className="all-icons flex">
-          <a href="">
+          <a
+            href="https://www.instagram.com/ziadmohamed6453/profilecard/?igsh=OWdwMG9pZmFrMW1k "
+            target="blank"
+          >
             <div className="icon icon-instagram"></div>
           </a>
-          <a href="https://github.com/pigpis-Curwud-0wikty?tab=repositories">
+          <a
+            href="https://github.com/pigpis-Curwud-0wikty?tab=repositories"
+            target="blank"
+          >
             <div className="icon icon-github"></div>
           </a>
-          <a href="www.linkedin.com/in/ziad-mohamed-b01482345">
+          <a
+            href="https://linkedin.com/in/ziad-mohamed-b01482345"
+            target="blank"
+          >
             <div className="icon icon-linkedin"></div>
           </a>
         </div>

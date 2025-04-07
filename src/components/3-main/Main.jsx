@@ -85,18 +85,24 @@ const Main = () => {
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
-                  <p className="sub-title">
-                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                    tempore dolor in, accusantium laudantium accusamus.
-                  </p>
+                  <p className="sub-title">{item.paragraph}</p>
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                      <a
+                        style={{
+                          display: item.siteLink === "" ? "none" : "block",
+                        }}
+                        href={item.siteLink}
+                      >
+                        <div className="icon-link"></div>
+                      </a>
+                      <a href={item.gitLink}>
+                        <div className="icon-github"></div>
+                      </a>
                     </div>
 
-                    <a className="link flex" href="">
+                    <a className="link flex" href={item.moreLink}>
                       more
                       <span
                         style={{ alignSelf: "end" }}

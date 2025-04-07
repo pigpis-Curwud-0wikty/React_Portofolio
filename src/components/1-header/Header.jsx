@@ -32,9 +32,8 @@ const Header = () => {
       <nav>
         <ul className="flex">
           <li>
-            <a href="#about">About</a>
+            <a href="#home">Home</a>
           </li>
-
           <li>
             <a href="#projects">Articles</a>
           </li>
@@ -42,7 +41,7 @@ const Header = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#footer">Speaking</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -82,19 +81,54 @@ const Header = () => {
               />
             </li>
             <li>
-              <a href="">About</a>
+              <a
+                href="#home"
+                onClick={() => {
+                  setshowModal(false);
+                }}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="">Articles</a>
+              <a
+                href="#projects"
+                onClick={() => {
+                  setshowModal(false);
+                }}
+              >
+                Articles
+              </a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a
+                href="#projects"
+                onClick={() => {
+                  setshowModal(false);
+                }}
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="">Speaking</a>
+              <a
+                href="#about"
+                onClick={() => {
+                  setshowModal(false);
+                }}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="">Uses</a>
+              <a
+                href="#contact"
+                onClick={() => {
+                  setshowModal(false);
+                }}
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
